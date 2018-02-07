@@ -37,3 +37,8 @@ Portable Node.js and NPM on Windows
 	After that, run your web server using node app.js, 
 	visit http://localhost:3000, 
 	and you will see a message 'Hello World'
+	
+	
+# npm.cmd install express
+
+
