@@ -39,6 +39,8 @@ Portable Node.js and NPM on Windows
 	and you will see a message 'Hello World'
 	
 	
-# npm.cmd install express
+npm.cmd install express
+npm.cmd install express --save
+npm.cmd install body-parser --save
 
 
