@@ -44,10 +44,15 @@ npm.cmd install express
 npm.cmd install express --save
 npm.cmd install body-parser --save
 
-npm.cmd install express-validator
-npm.cmd install express-ws
+WUI:
+	npm.cmd install express-validator
+	npm.cmd install express-ws
+	npm.cmd install express-session
+	npm.cmd install node-async-locks
+	npm.cmd install uuid
 	
-npm.cmd install google-protobuf	
-	
+GRPC:	
+	npm.cmd install google-protobuf	
+
 	
 	
