@@ -27,13 +27,13 @@ app.get('/g1', (req, res) => {
 	});
 });
 
-/* app.get('/g2', (req, res) => {
+app.get('/g2', (req, res) => {
 	console.log('G2 ...');
 	const msg = await client.sayHello({ name: 'G2-' + uuidV4() })
 	console.log(msg);
 	res.send(msg);
 	res.end('');
-}); */
+});
 
 
 
