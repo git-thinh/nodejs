@@ -53,6 +53,18 @@ WUI:
 	
 GRPC:	
 	npm.cmd install google-protobuf	
+	npm install grpc-caller
 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
