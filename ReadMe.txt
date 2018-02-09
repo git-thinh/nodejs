@@ -48,13 +48,12 @@ WUI:
 	npm.cmd install express-validator
 	npm.cmd install express-ws
 	npm.cmd install express-session
-	npm.cmd install node-async-locks
-	npm.cmd install uuid
+	npm.cmd install node-async-locks 
 	
 GRPC:	
 	npm.cmd install google-protobuf	
-	npm install grpc-caller
-
+	npm.cmd install grpc-caller
+	npm.cmd install uuid --save
 
 	
 	
