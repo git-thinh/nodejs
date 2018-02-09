@@ -38,9 +38,16 @@ Portable Node.js and NPM on Windows
 	visit http://localhost:3000, 
 	and you will see a message 'Hello World'
 	
-	
+/////////////////////////////////////////////////////	
+
 npm.cmd install express
 npm.cmd install express --save
 npm.cmd install body-parser --save
 
-
+npm.cmd install express-validator
+npm.cmd install express-ws
+	
+npm.cmd install google-protobuf	
+	
+	
+	
