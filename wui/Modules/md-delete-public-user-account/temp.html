@@ -1,0 +1,34 @@
+﻿<!-- begin module -->
+<!-- begin module -->
+<div class="container _container">
+    <div class="panel-group">
+        <div class="panel panel-default fix-body">
+            <div class="panel-heading _bg-white _border-bottom">
+                <span class="label-title mod-title">{{ label.Res_0704_01 }}
+                </span>
+            </div>
+            <div class="panel-body" style="padding-left: 40px;">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <label class="label-title">{{ label.Res_0704_01_01 }}</label>
+                    </div>
+                </div>
+                <div class="box-user">
+                    <div class="row padding-field-bottom" ng-repeat="u in users">
+                        <div class="col-sm-12">
+                            <div class="checkbox" style="margin: 0px; padding: 0px;">
+                                <input type="checkbox" id="item-{{u}}" class="ng-scope">
+                                <label for="{{u}}" class="label-title ng-scope inline bold" ng-click="checkUser($event, u)">{{u}}</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel _align-right fix-footer">
+            <button ng-click="submit()" class="btn _btn-webui _btn-width">OK</button>
+            <button id="mod-cancel" ng-click="cancel()" class="btn btn-default _btn-width">Cancel</button>
+        </div>
+    </div>
+</div>
+<!-- end module -->

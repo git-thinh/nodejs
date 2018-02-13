@@ -1,0 +1,170 @@
+﻿<!-- begin module -->
+<div class="container _container">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading _bg-white _border-bottom">
+                <span class="label-title">{{ label.Res_0103_01 }}
+                </span>
+            </div>
+            <div class="panel-body">
+                <div class="panel-group">
+                    <div id="box-scroll-1" class="box-scroll"></div>
+                    <div id="box-1" role="1" class="box-item">
+                        <div class="panel panel-default _boder-none box-settingcategory1">
+                            <div class="panel-heading settingcategory1"
+                                 ng-click="settingCategoryAccordion(1,$event)"
+                                data-toggle="collapse" data-target="#body-settingcategory1" aria-expanded="false" aria-controls="body-settingcategory1">
+                                <span class="label-title">{{ label.Res_0103_01_01 }}
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down _float-right"></span>
+                            </div>
+                            <div class="panel-body collapse" id="body-settingcategory1">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="form-group checkbox" ng-kit-check="settingcategory1_enable_checkbox">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-relative">
+                                    <div class="panel-hide-modal show-{{category1_setting_hide}}">
+                                    </div>
+                                    <div class="row _padding-field-bottom">
+                                        <div class="col-sm-6"><span class="_padding-left-title label-title">{{ label.Res_0103_01_01_02 }}</span></div>
+                                        <div class="col-sm-6">
+                                            <div class="switch _float-right" ng-kit-switch="settingcategory1_setting_setting1_switch">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row _padding-field-bottom">
+                                        <div class="col-sm-6"><span class="_padding-left-title label-title">{{ label.Res_0103_01_01_03 }}</span></div>
+                                        <div class="col-sm-6">
+                                            <div class="switch _float-right" ng-kit-switch="settingcategory1_setting_setting2_switch">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6"><span class="_padding-left-title label-title">{{ label.Res_0103_01_01_04 }}</span></div>
+                                        <div class="col-sm-6">
+                                            <div class="switch _float-right" ng-kit-switch="settingcategory1_setting_setting3_switch">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="box-scroll-2" class="box-scroll"></div>
+                    <div id="box-2" role="2" class="box-item">
+                        <div class="panel panel-default _boder-none box-settingcategory2">
+                            <div class="panel-heading settingcategory2"
+                                 ng-click="settingCategoryAccordion(2,$event)"
+                                data-toggle="collapse" data-target="#body-settingcategory2" aria-expanded="false" aria-controls="body-settingcategory2">
+                                <span class="label-title">{{ label.Res_0103_01_02}}
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down _float-right"></span>
+                            </div>
+                            <div class="panel-body collapse" id="body-settingcategory2">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class='form-group checkbox' ng-kit-check="settingcategory2_enable_checkbox">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-relative">
+                                    <div class="panel-hide-modal show-{{category2_setting_hide}}">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6"><span class="_padding-left-title label-title">{{ label.Res_0103_01_02_02 }}</span></div>
+                                        <div class="col-sm-6" ng-kit-text="settingcategory2_setting1_textbox">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="box-scroll-3" class="box-scroll"></div>
+                    <div id="box-3" role="3" class="box-item">
+                        <div class="panel panel-default _boder-none box-settingcategory3">
+                            <div class="panel-heading settingcategory3"
+                                 ng-click="settingCategoryAccordion(3,$event)"
+                                data-toggle="collapse" data-target="#body-settingcategory3" aria-expanded="false" aria-controls="body-settingcategory3">
+                                <span class="label-title">{{ label.Res_0103_01_03}}
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down _float-right"></span>
+                            </div>
+                            <div class="panel-body collapse" id="body-settingcategory3">
+                                <div class="row _padding-field-bottom">
+                                    <div class="col-sm-6"><span class="_padding-left-title label-title">{{ label.Res_0103_01_03_01}}</span></div>
+                                    <div class="col-sm-6">
+                                        <div class="dropdown">
+                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                                                {{ settingcategory3_setting1 }}&nbsp;&nbsp;<span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li ng-repeat="it in settingcategory3_setting1_items" ng-class="{active : settingcategory3_setting1_isSelectMain(it)}">
+                                                    <a href="javascript:void(0);" ng-click="settingcategory3_setting1_Click(it)">{{ it }}</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row _padding-field-bottom">
+                                    <div class="col-sm-6"><span class="_padding-left-title label-title">{{ label.Res_0103_01_03_02 }}</span></div>
+                                    <div class="col-sm-6" ng-kit-text="settingcategory3_setting2_textbox">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6"><span class="_padding-left-title label-title">{{ label.Res_0103_01_03_03 }}</span></div>
+                                    <div class="col-sm-6" ng-kit-text="settingcategory3_setting3_textbox">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="box-scroll-4" class="box-scroll"></div>
+                    <div id="box-4" role="4" class="box-item">
+                        <div class="panel panel-default _boder-none box-settingcategory4">
+                            <div class="panel-heading settingcategory4"
+                                 ng-click="settingCategoryAccordion(4,$event)"
+                                data-toggle="collapse" data-target="#body-settingcategory4" aria-expanded="false" aria-controls="body-settingcategory4">
+                                <span class="label-title">{{ label.Res_0103_01_04}}
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down _float-right"></span>
+                            </div>
+                            <div class="panel-body _padding-bottom-none collapse" id="body-settingcategory4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <span class="_padding-left-title label-title">{{ label.Res_0103_01_04_01}}</span>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="group-radio">
+                                            <div class="radio">
+                                                <label class="label-title">
+                                                    <input type="radio" ng-change="settingcategory4_setting1_Change(settingcategory4_setting1)" value="1" ng-model="settingcategory4_setting1" name="SettingCategory4.Setting1">
+                                                    {{ label.Res_0103_01_04_02}}
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label class="label-title">
+                                                    <input type="radio" ng-change="settingcategory4_setting1_Change(settingcategory4_setting1)" value="2" ng-model="settingcategory4_setting1" name="SettingCategory4.Setting1">{{ label.Res_0103_01_04_03}}</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label class="label-title">
+                                                    <input type="radio" ng-change="settingcategory4_setting1_Change(settingcategory4_setting1)" value="3" ng-model="settingcategory4_setting1" name="SettingCategory4.Setting1">{{ label.Res_0103_01_04_04}}</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel _align-right">
+            <button ng-click="formSubmit()" class="btn _btn-webui _btn-width">OK</button>
+            <button ng-click="formCancel()" class="btn btn-default _btn-width">Cancel</button>
+        </div>
+    </div>
+</div>
+<!-- end module -->

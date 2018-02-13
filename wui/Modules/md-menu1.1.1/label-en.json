@@ -1,0 +1,20 @@
+{
+  "Res_0103_01": "SettingGroup1",
+  "Res_0103_01_01": "SettingCategory1",
+  "Res_0103_01_01_01": "SettingName",
+  "Res_0103_01_01_02": "Setting1",
+  "Res_0103_01_01_03": "Setting2",
+  "Res_0103_01_01_04": "Setting3",
+  "Res_0103_01_02": "SettingCategory2",
+  "Res_0103_01_02_01": "SettingName",
+  "Res_0103_01_02_02": "Setting1",
+  "Res_0103_01_03": "SettingCategory3",
+  "Res_0103_01_03_01": "Setting1",
+  "Res_0103_01_03_02": "Setting2",
+  "Res_0103_01_03_03": "Setting3",  
+  "Res_0103_01_04": "SettingCategory4",
+  "Res_0103_01_04_01": "Setting1",  
+  "Res_0103_01_04_02": "radio1",
+  "Res_0103_01_04_03": "radio2",
+  "Res_0103_01_04_04": "radio3"
+}

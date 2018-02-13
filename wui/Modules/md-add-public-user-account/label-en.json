@@ -1,0 +1,7 @@
+{
+  "Res_0702_01": "Add Public User Account", 
+  "Res_0702_01_01": "User Name",
+  "Res_0702_01_02": "New Password",
+  "Res_0702_01_03": "Confirm New Password",
+  "Res_0702_01_04": "ユーザーアカウント「{userName}」を登録します。"
+}

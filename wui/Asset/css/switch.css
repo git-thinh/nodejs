@@ -1,0 +1,62 @@
+﻿/*
+///////////////////////////////////////////////
+// Custom control on|off switch bootstrap
+
+<div class="switch">
+    <input type="checkbox" name="onoffswitch" id="myonoffswitch" checked>
+    <label for="myonoffswitch"></label>
+</div>
+*/
+
+.switch {
+    position: relative;
+    width: 36px;
+    height: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+    .switch input {
+        display: none;
+    }
+
+    .switch label {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        height: 22px;
+        padding: 0;
+        line-height: 24px;
+        border: 1px solid #999999;
+        border-radius: 24px;
+        background-color: #fff;
+        transition: background-color 0.3s ease-in;
+    }
+
+        .switch label:before {
+            content: "";
+            display: block;
+            width: 24px;
+            margin: 0px;
+            background: #fff;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 11px;
+            border: 1px solid #999999;
+            border-radius: 26px;
+            transition: all 0.3s ease-in 0s;
+        }
+
+    .switch input[checked] + label {
+        background-color: rgb(103,133,193);
+    }
+
+        .switch input[checked] + label, .switch input[checked] + label:before {
+            border-color: rgb(103,133,193);
+        }
+
+            .switch input[checked] + label:before {
+                right: 0px;
+            }

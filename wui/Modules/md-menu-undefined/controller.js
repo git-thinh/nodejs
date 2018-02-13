@@ -1,0 +1,3 @@
+﻿
+function mdmenuundefinedCtrl($rootScope, $scope) {
+}

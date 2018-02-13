@@ -1,0 +1,305 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Menu 1",
+    "menus": [   
+      {
+        "id": 1001,
+        "parent_id": 1,
+        "name": "Menu 1.1",
+        "menus": [
+          {
+            "parent_id": 1001,
+            "name": "Menu 1.1.1",
+            "code": "md-menu1.1.1"
+          },
+          {
+            "parent_id": 1001,
+            "name": "Menu 1.1.2",
+            "code": "md-menu1.1.2"
+          },
+          {
+            "parent_id": 1001,
+            "name": "Menu 1.1.3",
+            "code": "md-menu1.1.3"
+          },
+          {
+            "parent_id": 1001,
+            "name": "Menu 1.1.4",
+            "code": "md-menu1.1.4"
+          }
+        ]
+      },
+      {
+        "id": 1002,
+        "parent_id": 1,
+        "name": "Menu 1.2",
+        "menus": [
+          {
+            "parent_id": 1002,
+            "name": "Menu 1.2.1",
+            "code": "md-menu1.2.1"
+          },
+          {
+            "parent_id": 1002,
+            "name": "Menu 1.2.2",
+            "code": "md-menu1.2.2"
+          },
+          {
+            "parent_id": 1002,
+            "name": "Menu 1.2.3",
+            "code": "md-menu1.2.3"
+          },
+          {
+            "parent_id": 1002,
+            "name": "Menu 1.2.4",
+            "code": "md-menu1.2.4"
+          }
+        ]
+      },
+      {
+        "parent_id": 1,
+        "name": "Menu 1.3",
+        "code": "md-menu1.3"
+      },
+      {
+        "parent_id": 1,
+        "name": "Menu 1.4",
+        "code": "md-menu1.4"
+      },
+      {
+        "parent_id": 1,
+        "name": "Menu 1.5",
+        "code": "md-menu1.5"
+      },
+      {
+        "parent_id": 1,
+        "name": "Menu 1.6",
+        "code": "md-menu1.6"
+      },
+      {
+        "parent_id": 1,
+        "name": "Menu 1.7",
+        "code": "md-menu1.7"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Menu 2",
+    "menus": [
+      {
+        "parent_id": 2,
+        "name": "Menu 2.1",
+        "code": "md-menu2.1"
+      },
+      {
+        "parent_id": 2,
+        "name": "Menu 2.2",
+        "code": "md-menu2.2"
+      },
+      {
+        "parent_id": 2,
+        "name": "Menu 2.3",
+        "code": "md-menu2.3"
+      },
+      {
+        "parent_id": 2,
+        "name": "Menu 2.4",
+        "code": "md-menu2.4"
+      },
+      {
+        "parent_id": 2,
+        "name": "Menu 2.5",
+        "code": "md-menu2.5"
+      },
+      {
+        "parent_id": 2,
+        "name": "Menu 2.6",
+        "code": "md-menu2.6"
+      },
+      {
+        "parent_id": 2,
+        "name": "Menu 2.7",
+        "code": "md-menu2.7"
+      },
+      {
+        "parent_id": 2,
+        "name": "Menu 2.8",
+        "code": "md-menu2.8"
+      },
+      {
+        "parent_id": 2,
+        "name": "Menu 2.9",
+        "code": "md-menu2.9"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Menu 3",
+    "code": "md-menu3"
+  },
+  {
+    "id": 4,
+    "name": "Menu 4",
+    "code": "md-menu4"
+  },
+  {
+    "id": 5,
+    "name": "Menu 5",
+    "code": "md-menu5"
+  },
+  {
+    "id": 6,
+    "name": "Menu 6",
+    "code": "md-menu6"
+  },
+  {
+    "id": 7,
+    "auth": "Admin",
+    "name": "Menu 7",
+    "menus": [
+      {
+        "parent_id": 7,
+        "name": "Change Admin Password",
+        "code": "md-change-admin-password"
+      },
+      {
+        "parent_id": 7,
+        "name": "Add Public User Account",
+        "code": "md-add-public-user-account"
+      },
+      {
+        "parent_id": 7,
+        "name": "Change Public User Password",
+        "code": "md-change-public-user-password"
+      },
+      {
+        "parent_id": 7,
+        "name": "Delete Public User Account",
+        "code": "md-delete-public-user-account"
+      },
+      {
+        "parent_id": 7,
+        "name": "Menu 7.5",
+        "code": "md-menu7.5"
+      },
+      {
+        "parent_id": 7,
+        "name": "Change Logout Time",
+        "code": "md-change-logout-time"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Menu 8",
+    "code": "md-menu8"
+  },
+  {
+    "id": 9,
+    "name": "Menu 9",
+    "code": "md-menu9"
+  },
+  {
+    "id": 10,
+    "name": "Menu 10",
+    "code": "md-menu10"
+  },
+  {
+    "id": 11,
+    "name": "Menu 11",
+    "code": "md-menu11"
+  },
+  {
+    "id": 12,
+    "name": "Menu 12",
+    "code": "md-menu12"
+  },
+  {
+    "id": 13,
+    "name": "Menu 13",
+    "code": "md-menu13"
+  },
+  {
+    "id": 14,
+    "name": "Menu 14",
+    "code": "md-menu14"
+  },
+  {
+    "id": 15,
+    "name": "Menu 15",
+    "code": "md-menu15"
+  },
+  {
+    "id": 16,
+    "name": "Menu 16",
+    "code": "md-menu16"
+  },
+  {
+    "id": 17,
+    "name": "Menu 17",
+    "code": "md-menu17"
+  },
+  {
+    "id": 18,
+    "name": "Menu 18",
+    "code": "md-menu18"
+  },
+  {
+    "id": 19,
+    "name": "Menu 19",
+    "code": "md-menu19"
+  },
+  {
+    "id": 20,
+    "name": "Menu 20",
+    "code": "md-menu20"
+  },
+  {
+    "id": 21,
+    "name": "Menu 21",
+    "code": "md-menu21"
+  },
+  {
+    "id": 22,
+    "name": "Menu 22",
+    "code": "md-menu22"
+  },
+  {
+    "id": 23,
+    "name": "Menu 23",
+    "code": "md-menu23"
+  },
+  {
+    "id": 24,
+    "name": "Menu 24",
+    "code": "md-menu24"
+  },
+  {
+    "id": 25,
+    "name": "Menu 25",
+    "code": "md-menu25"
+  },
+  {
+    "id": 26,
+    "name": "Menu 26",
+    "code": "md-menu26"
+  },
+  {
+    "id": 27,
+    "name": "Menu 27",
+    "code": "md-menu27"
+  },
+  {
+    "id": 28,
+    "name": "Menu 28",
+    "code": "md-menu28"
+  },
+  {
+    "id": 29,
+    "name": "Menu 29",
+    "code": "md-menu29"
+  }
+]

@@ -1,0 +1,114 @@
+﻿#tableUser_wrapper #tableUser {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+    #tableUser_wrapper #tableUser tbody tr td {
+        text-align: left;
+        font-weight: bold;
+    }
+
+        #tableUser_wrapper #tableUser tbody tr td:nth-child(2) {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+            #tableUser_wrapper #tableUser tbody tr td:nth-child(2) div.CHK {
+                width: 20px;
+                display: inline-block;
+                height: 20px;
+            }
+
+        #tableUser_wrapper #tableUser thead tr th:nth-child(1),
+        #tableUser_wrapper #tableUser thead tr th:nth-child(2),
+        #tableUser_wrapper #tableUser tbody tr td:nth-child(1),
+        #tableUser_wrapper #tableUser tbody tr td:nth-child(2) {
+            width: 44px !important;
+        }
+
+#tableUser_wrapper div.bottom {
+    border: 1px solid #ddd;
+    padding: 13px 3px 0px 3px;
+    border-top: none;
+}
+
+#tableUser_wrapper .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #fff !important;
+}
+
+#tableUser_length select {
+    width: 46px !important;
+    padding-right: 0px !important;
+    padding-left: 2px !important;
+}
+
+#tableUser_paginate .glyphicon {
+    padding: 0px !important;
+    font-size: 9px;
+    line-height: 17px;
+    top: 0px;
+}
+
+#tableUser_paginate .pagination > li > a, #tableUser_paginate .pagination > li > span {
+    color: #333;
+    font-weight: bold;
+    padding: 7px 12px 3px;
+}
+
+#tableUser_paginate .pagination > .active > a,
+#tableUser_paginate .pagination > .active > a:focus,
+#tableUser_paginate .pagination > .active > a:hover,
+#tableUser_paginate .pagination > .active > span,
+#tableUser_paginate .pagination > .active > span:focus,
+#tableUser_paginate .pagination > .active > span:hover {
+    color: #fff;
+    background-color: #0099cc;
+}
+
+#tableUser_wrapper .magic-radio + label {
+    position: relative;
+    display: block;
+    padding-left: 0;
+    cursor: pointer;
+    vertical-align: middle;
+    width: 20px;
+    height: 21px;
+    margin-bottom: 0px;
+}
+
+#tableUser_wrapper #tableUser_info {
+    padding-top: 3px;
+    float: left;
+}
+
+#tableUser_wrapper .table-bordered > thead > tr > td,
+#tableUser_wrapper .table-bordered > thead > tr > th {
+    border-bottom-width: 1px !important;
+}
+
+#tableUser_wrapper table thead tr td {
+    border-bottom: none !important;
+}
+
+#tableUser_wrapper #tableUser_length {
+    padding-left: 8px;
+    display: inline-block;
+    float: left;
+}
+
+#tableUser_wrapper #tableUser_paginate {
+    clear: both;
+}
+
+body.mobile #tableUser_wrapper #tableUser_info {
+    float: none;
+    padding-top: 0px;
+    float: left;
+}
+
+body.mobile #tableUser_wrapper #tableUser_length {
+    padding-left: 0;
+    display: inherit;
+}
+/**************************/
+

@@ -1,0 +1,23 @@
+{
+  "Res_0705_01": "", 
+  "Res_0705_01_01": "No.",
+  "Res_0705_01_02": "ユーザー名",
+  "sEmptyTable": "",
+  "sInfo": "Showing _START_ to _END_ of _TOTAL_ rows",
+  "sInfoEmpty": "0 to 0 of 0 rows",
+  "sInfoFiltered": "(Total _MAX_ rows)",
+  "sInfoPostFix": "",
+  "sInfoThousands": ".",
+  "sLengthMenu": "_MENU_ rows per page",
+  "sLoadingRecords": "Loading...",
+  "sProcessing": "Processing...",
+  "sSearch": "",
+  "searchPlaceholder": "Search",
+  "sZeroRecords": "",
+  "oPaginate": {
+    "sFirst": "<span class=\"padding-none glyphicon glyphicon-menu-left\"></span>",
+    "sPrevious": "<span class=\"padding-none glyphicon glyphicon-menu-left\"></span>",
+    "sNext": "<span class=\"padding-none glyphicon glyphicon-menu-right\"></span>",
+    "sLast": "<span class=\"padding-none glyphicon glyphicon-menu-right\"></span>"
+  }
+}

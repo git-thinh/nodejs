@@ -1,0 +1,41 @@
+﻿<!-- begin module -->
+<div class="container _container">
+    <div class="panel-group">
+        <div class="panel panel-default fix-body">
+            <div class="panel-heading _bg-white _border-bottom">
+                <span class="label-title mod-title bold">{{ label.Res_0702_01 }}
+                </span>
+            </div>
+            <div class="panel-body">
+
+                <div class="mod-table">
+                    <div class="mod-blank"></div>
+                    <div class="mod-cell">
+                        <div class="row padding-field-bottom">
+                            <div class="col-sm-6"><span class="bold _padding-left-title label-title">{{ label.Res_0702_01_01 }}</span></div>
+                            <div class="col-sm-6" ng-kit-text="user_name_textbox">
+                            </div>
+                        </div>
+                        <div class="row padding-field-bottom">
+                            <div class="col-sm-6"><span class="bold _padding-left-title label-title">{{ label.Res_0702_01_02 }}</span></div>
+                            <div class="col-sm-6" ng-kit-pass="password_new_textbox">
+                            </div>
+                        </div>
+                        <div class="row padding-field-bottom">
+                            <div class="col-sm-6"><span class="bold _padding-left-title label-title">{{ label.Res_0702_01_03 }}</span></div>
+                            <div class="col-sm-6" ng-kit-pass="password_new_confirm_textbox">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mod-blank"></div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="panel _align-right fix-footer">
+            <button ng-click="submit()" class="btn _btn-webui _btn-width">OK</button>
+            <button ng-click="cancel()" class="btn btn-default _btn-width">Cancel</button>
+        </div>
+    </div>
+</div>
+<!-- end module -->

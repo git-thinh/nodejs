@@ -1,0 +1,24 @@
+﻿<div id="menu-main">
+    <ul class="menu-nav">
+        <li ng-repeat="m in menus" id="mn-main-{{ m.id }}" ng-class="{active : isSelectMain(m.id, m.code, m.name)}"
+            ng-click="menuMainClick($event, m.id, m.code, m.name, m.menus)">
+            <a href="javascript:void(0);" for="{{ m.id }}">{{ m.name }}</a>
+        </li>
+    </ul>
+</div>
+<div id="menu-sub" role="{{menuIndex}}">
+    <ul ng-repeat="msub in menus" class="menu-nav menusub" id="menusub-{{ msub.id }}" ng-show="msub.id == menuChild">
+        <li class="menu-li-parent-back" ng-click="menuMainBack()">
+            <a href="javascript:void(0);">< {{ msub.name }}</a>
+        </li>
+        <li ng-repeat="m in msub.menus" id="{{ m.code }}" ng-class="{ 'haslast' : m.menus.length > 0, 'nolast': m.menus == undefined }">
+            <a href="javascript:void(0);" for="{{ m.id }}" ng-click="menuSubOpen($event, m.id, m.code, m.menus)">
+                <i ng-class="{'glyphicon glyphicon-triangle-right' : m.menus.length > 0 }"></i>
+                {{ m.name }}
+            </a>
+            <ul ng-class="{ 'menu-last' : menuChildLastArray.indexOf(m.id) != -1, 'hide':  menuChildLastArray.indexOf(m.id) == -1 }" id="menulast-{{ m.id }}">
+                <li ng-repeat="l in m.menus" id="{{ l.code }}" ng-click="menuLastOpen($event, l.code)">{{ l.name }}</li> 
+            </ul>
+        </li>
+    </ul>
+</div>

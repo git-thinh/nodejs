@@ -1,0 +1,42 @@
+﻿.view-module .mod-title {
+    font-weight: bold;
+}
+
+.view-module .padding-field-bottom {
+    padding-bottom: 10px;
+}
+
+
+
+.view-module .inline {
+    /*display: inline !important;*/
+}
+
+.view-module .bold {
+    font-weight: bold !important;
+}
+
+.view-module input[type="text"], .view-module input[type="password"] {
+    border: 1px solid #333 !important;
+    border-radius: 0px !important;
+    font-weight: bold !important;
+}
+
+.view-module .mod-cell {
+    width: 500px;
+}
+
+.view-module .mod-blank {
+    width: calc((100% - 500px)/2);
+}
+
+.view-module .box-user {
+    display: inline-block;
+    width: calc(100% - 39px);
+    height: calc(100% - 92px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    border-radius: 0 0 10px 0;
+    left: 40px;
+}

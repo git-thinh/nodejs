@@ -1,0 +1,22 @@
+{
+  "SettingCategory1": {
+    "Enable": "true",
+    "Setting": {
+      "Setting1": "Off",
+      "Setting2": "On",
+      "Setting3": "On"
+    }
+  },
+  "SettingCategory2": {
+    "Enable": "false",
+    "Setting1": "abcdefghijklmn"
+  },
+  "SettingCategory3": {
+    "Setting1": "List Item 2",
+    "Setting2": 10,
+    "Setting3": 99
+  },
+  "SettingCategory4": {
+    "Setting1": "3"
+  }
+}
