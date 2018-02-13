@@ -1,3 +1,0 @@
-﻿
-function mdblankCtrl($rootScope, $scope) {
-}
