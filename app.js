@@ -1,17 +1,13 @@
-const http = require('http');
+var express = require('express');
+var app = express();
 
-const hostname = '127.0.0.1';
-const port = 80;
+var path = require('path');
+var __dirname = path.dirname(require.main.filename);
 
-const server = http.createServer((req, res) => {
-	res.statusCode = 200;
-	res.setHeader('Content-Type', 'text/plain');
-	//request.setHeader('Content-Type', 'application/json');
-	//request.setHeader('Set-Cookie', ['type=ninja', 'language=javascript']);
+console.log(__dirname);
 
-	res.end('Hello World\n');
-});
+//app.use(express.static(__dirname)); // Current directory is root
+app.use(express.static(path.join(__dirname, 'www')));  
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+app.listen(80);
+console.log('Listening on port 80');

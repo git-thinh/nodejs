@@ -41,7 +41,7 @@ Portable Node.js and NPM on Windows
 /////////////////////////////////////////////////////	
 
 npm.cmd install express
-npm.cmd install express --save
+npm.cmd install serve-index
 npm.cmd install body-parser --save
 npm.cmd install async
 
