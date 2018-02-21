@@ -1,0 +1,142 @@
+<script src="../../node_modules/redux/dist/redux.min.js"></script>
+<script src="../moment.min.js"></script>
+
+<script>
+  (() => {
+
+    let savedState = localStorage.getItem('ExpenseManagerState');
+    if (savedState) { savedState = JSON.parse(savedState); }
+
+
+    function uiReducer(state = {
+      authenticated: savedState ? savedState.uiState.authenticated : false,
+      infoDialogVisible: false
+    }, action) {
+      switch (action.type) {
+
+        case 'LOGIN':
+          return Object.assign({}, state, { authenticated: true });
+
+        case 'LOGOUT':
+          return Object.assign({}, state, { authenticated: false });
+
+        case 'SHOW_INFO_DIALOG':
+          return Object.assign({}, state, { infoDialogVisible: true });
+
+        case 'HIDE_INFO_DIALOG':
+          return Object.assign({}, state, { infoDialogVisible: false });
+
+        default:
+          return state;
+      }
+    }
+
+
+    function expensesReducer(state = {
+      expenses: savedState ? savedState.expenses.expenses : _generateDemoExpenses(100),
+      selectedExpense: undefined
+    }, action) {
+      switch (action.type) {
+
+        case 'EDIT_EXPENSE':
+          return Object.assign({}, state, { selectedExpense: action.expense });
+
+        case 'UPDATE_EXPENSE':
+          return Object.assign({}, state, {
+            expenses: state.expenses.map(e => e.id === action.expense.id ? action.expense : e),
+            selectedExpense: undefined
+          });
+
+        case 'ADD_EXPENSE':
+          return Object.assign({}, state, {
+            expenses: state.expenses.concat(action.expense),
+            selectedExpense: undefined
+          });
+
+        case 'DELETE_EXPENSE':
+          return Object.assign({}, state, {
+            expenses: state.expenses.filter(e => e.id !== action.expense.id),
+            selectedExpense: undefined
+          });
+
+        case 'CANCEL_EDIT':
+          return Object.assign({}, state, { selectedExpense: undefined });
+
+        default:
+          return state;
+      }
+    }
+
+    function filtersReducer(state = {
+      filters: { status: ['new', 'in_progress', 'reimbursed'] }
+    }, action) {
+      switch (action.type) {
+
+        case 'TOGGLE_FILTERS':
+          return Object.assign({}, state, { filtersVisible: !state.filtersVisible });
+
+        case 'HIDE_FILTERS':
+          return Object.assign({}, state, { filtersVisible: false });
+
+        case 'FILTERS_UPDATED':
+          return Object.assign({}, state, { filters: action.filters });
+
+        case 'CLEAR_FILTERS':
+          return Object.assign({}, state, {
+            filters: { status: ['new', 'in_progress', 'reimbursed'] }
+          });
+
+        default:
+          return state;
+      }
+    }
+
+    window.ExpenseManager = window.ExpenseManager || {};
+    window.ExpenseManager.rootReducer = Redux.combineReducers({
+      uiState: uiReducer,
+      expenses: expensesReducer,
+      filters: filtersReducer
+    });
+
+
+    // No-dependency UUID generator https://gist.github.com/jed/982883, good enough for this demo
+    function uuid() {
+      return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, a => (a ^ Math.random() * 16 >> a / 4).toString(16));
+    }
+
+    function _generateDemoExpenses(num) {
+      let date = moment();
+      const expenses = [];
+      for (let i = 0; i < num; i++) {
+        date = date.subtract(Math.floor(Math.random() * 168) + 1, 'hours');
+        var status = 'new';
+        if (i > 10) {
+          status = 'reimbursed';
+        } else if (i > 5) {
+          status = 'in_progress';
+        }
+        expenses.push({
+          id: uuid(),
+          date: date.format('YYYY-MM-DD'),
+          merchant: [
+            'Office supplies', 'Electronics', 'Rental car', 'Airline',
+            'Hotel', 'Restaurant', 'Taxi', 'Ride sharing', 'Fast food',
+            'Parking', 'Breakfast', 'Shuttle'
+          ]
+          [Math.floor(Math.random() * 12)],
+          total: _getRandomPrice(),
+          status: status,
+          receipt: status === 'new' ? '' : '/images/default-receipt.png',
+          comment: 'Expense from my business trip.'
+        });
+      }
+      return expenses;
+    }
+
+    function _getRandomPrice() {
+      const price = Math.random() * (Math.random() * 3) * 300 + 10;
+      return parseFloat(price.toFixed(2));
+    }
+  })();
+
+</script>

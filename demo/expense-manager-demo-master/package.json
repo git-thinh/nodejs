@@ -1,0 +1,40 @@
+{
+  "name": "vaadin-expense-manager",
+  "version": "3.0.0",
+  "description": "Sample PWA showcasing Vaadin Elements",
+  "main": "service-worker.js",
+  "dependencies": {
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "http2-push-manifest": "^1.0.0",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.0",
+    "eslint-plugin-html": "^2.0.0"
+  },
+  "scripts": {
+    "lint": "npm run lint:javascript",
+    "lint:javascript": "eslint . --ext js,html --ignore-path .gitignore",
+    "test": "polymer test",
+    "test:integration": "polymer build # test that psk builds without error with the CLI"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaadin/expense-manager-demo.git"
+  },
+  "keywords": [
+    "pwa",
+    "vaadin",
+    "polymer"
+  ],
+  "author": "Marcus Hellberg / Vaadin",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/vaadin/expense-manager-demo/issues"
+  },
+  "homepage": "https://github.com/vaadin/expense-manager-demo#readme"
+}
