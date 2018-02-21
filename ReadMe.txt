@@ -49,22 +49,12 @@ WUI:
 	npm.cmd install express-validator
 	npm.cmd install express-ws
 	npm.cmd install express-session
-<<<<<<< HEAD
-	npm.cmd install node-async-locks
-	npm.cmd install uuid
-
-GRPC:	
-    npm.cmd install grpc
-	npm.cmd install google-protobuf
-	npm.cmd install -g grpc-tools
-=======
 	npm.cmd install node-async-locks 
 	
 GRPC:	
 	npm.cmd install google-protobuf	
 	npm.cmd install grpc-caller
 	npm.cmd install uuid --save
->>>>>>> 21754a9220c0a8920ef4f045a573ba4523f4273b
 
     npm.cmd install lodash
     npm.cmd install minimist
@@ -76,17 +66,6 @@ GRPC-CALLER:
     npm.cmd install lodash
     npm.cmd install promisify-call
 	
-<<<<<<< HEAD
-    npm.cmd install async
-    npm.cmd install ava
-    npm.cmd install google-protobuf
-    npm.cmd install greenkeeper-lockfile
-    npm.cmd install jsdoc-to-markdown
-    npm.cmd install standard
-
-	npm.cmd install grpc-caller
-
-=======
 	
 	
 	
@@ -98,4 +77,3 @@ GRPC-CALLER:
 	
 	
 	
->>>>>>> 21754a9220c0a8920ef4f045a573ba4523f4273b
