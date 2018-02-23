@@ -66,7 +66,7 @@ GRPC-CALLER:
     npm.cmd install lodash
     npm.cmd install promisify-call
 	
-	
+# cmd /c node app.js	
 	
 	
 	
