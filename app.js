@@ -1,13 +1,18 @@
-var express = require('express');
+var express    = require('express');
 var app = express();
+var serveIndex = require('serve-index');
 
 var path = require('path');
 var __dirname = path.dirname(require.main.filename);
+var serveStatic = require('serve-static');
+var port = process.env.PORT || 80;
 
-console.log(__dirname);
+/**for files */
+app.use(serveStatic(path.join(__dirname, 'www')));
+/**for directory */
+app.use('/', express.static('www'), serveIndex('www', {'icons': true}))
 
-//app.use(express.static(__dirname)); // Current directory is root
-app.use(express.static(path.join(__dirname, 'www')));  
-
-app.listen(80);
-console.log('Listening on port 80');
+// Listen
+app.listen(port,  function () {
+  console.log('listening on port:',+ port );
+})
