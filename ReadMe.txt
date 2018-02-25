@@ -68,7 +68,8 @@ GRPC-CALLER:
 	
 # cmd /c node app.js	
 	
-	
+	npm.cmd install express-pouchdb pouchdb express
+	node.exe pouchdb.js & curl localhost:3000/db
 	
 	
 	
